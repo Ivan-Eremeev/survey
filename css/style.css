@@ -327,6 +327,7 @@ body.lock {
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 18px;
+  color: #787878;
   position: relative;
 }
 .header__list:before {
@@ -432,11 +433,16 @@ body.lock {
   display: none;
 }
 .step1__slider .noUi-value {
+  top: 15px;
   color: #000;
 }
 .step1__slider .noUi-value-sub {
   font-size: 16px;
   color: #000;
+}
+.step1__slider .noUi-marker {
+  height: 10px;
+  background: #787878;
 }
 .step1__btn {
   text-align: center;

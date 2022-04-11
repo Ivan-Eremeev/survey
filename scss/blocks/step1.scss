@@ -51,11 +51,16 @@
       }
     }
     .noUi-value {
+      top: 15px;
       color: #000;
     }
     .noUi-value-sub {
       font-size: 16px;
       color: #000;
+    }
+    .noUi-marker {
+      height: 10px;
+      background: $gray;
     }
   }
   &__btn {
