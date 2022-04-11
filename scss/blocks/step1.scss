@@ -1,0 +1,64 @@
+.step1 {
+  padding: 25px 0;
+  &__head {
+    margin-right: auto;
+    text-align: center;
+  }
+  &__title {
+    font-size: 38px;
+    font-weight: 300;
+    color: $red;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 45px;
+  }
+  &__circle {
+    text-align: center;
+    margin-bottom: 55px;
+    .circle-text {
+      font-size: 40px !important;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  &__slider {
+    padding-bottom: 50px;
+    margin-bottom: 65px;
+    .noUi-target {
+      height: 6px;
+      width: 100%;
+    }
+    .noUi-connects {
+      background: $gray;
+    }
+    .noUi-connect {
+      background: $red;
+    }
+    .noUi-handle {
+      width: 30px;
+      height: 30px;
+      top: -13px;
+      border-radius: 100%;
+      background-color: $red;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      border: none;
+      &:before, &:after {
+        display: none;
+      }
+    }
+    .noUi-value {
+      color: #000;
+    }
+    .noUi-value-sub {
+      font-size: 16px;
+      color: #000;
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
+}

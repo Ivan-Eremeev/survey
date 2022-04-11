@@ -3,12 +3,31 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    link(rel="stylesheet", href="css/nouislider.min.css")
     link(rel="stylesheet", href="css/style.css")
-    title Опрос
+    title Опрос | Навигация по страницам
   body 
     
     .page 
+
+      //- header.header 
+
       .content 
+        
+        .navPage
+          .wrapper
+            h1 Навигация по страницам
+            ul
+              li 
+                a(href="step1.html") Шаг 1
+              li 
+                a(href="step1-result.html") Шаг 1 Ответ
+
+      script(src="js/circles.js") 
+      script(src="js/wNumb.min.js")
+      script(src="js/nouislider.min.js") 
+      script(src="js/scripts.js") 
+
       footer.footer
         a.footer__logo(href="#") 
           img(src="img/logo.jpg", alt="")

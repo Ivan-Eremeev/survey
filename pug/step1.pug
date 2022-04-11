@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    link(rel="stylesheet", href="css/nouislider.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    title Опрос | Шаг 1
+  body 
+    
+    .page 
+
+      header.header 
+        .wrapper
+          ul.header__list 
+            li.active 1
+            li 2
+            li 3
+            li 4
+            li 5
+            li 6
+            li 7
+
+      .content 
+
+        .step1
+            .wrapper 
+              .step1__head 
+                .step1__title Вопрос 1
+                .step1__text Сколько % плановых хирургических пациентов перед операцией имеют анемию?
+              .step1__circle 
+                #circle
+              .step1__slider 
+                #rangeSlider
+              .step1__btn 
+                .btn Ответить
+
+      script(src="js/circles.js") 
+      script(src="js/wNumb.min.js")
+      script(src="js/nouislider.min.js") 
+      script(src="js/scripts.js") 
+
+      footer.footer
+        a.footer__logo(href="#") 
+          img(src="img/logo.jpg", alt="")

@@ -136,7 +136,7 @@ a {
 button,
 input,
 textarea {
-  font-family: Arial;
+  font-family: "Myriad Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -144,8 +144,9 @@ body {
   height: 100%;
   min-width: 319px;
   background-color: #fff;
-  font-family: Arial;
+  font-family: "Myriad Pro", sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 body.lock {
   position: fixed;
@@ -203,7 +204,7 @@ body.lock {
 
 .wrapper {
   width: 100%;
-  max-width: 1260px;
+  max-width: 860px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
@@ -261,12 +262,109 @@ body.lock {
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
+.btn {
+  min-width: 230px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 11px 30px;
+  background-color: #EE2D24;
+  border: none;
+  font-size: 22px;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+}
+
+.navPage {
+  padding: 50px 0;
+}
+.navPage h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.navPage ul {
+  font-size: 25px;
+}
+.navPage ul li a {
+  color: #000;
+}
+
 /* /settings */
+.header {
+  padding-top: 35px;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 18px;
+  position: relative;
+}
+.header__list:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #787878;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+.header__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #787878;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__list li.active {
+  background-color: #892F87;
+  border-color: #892F87;
+  color: #fff;
+}
+
 .footer {
   background-color: #892F87;
 }
@@ -276,4 +374,102 @@ body.lock {
 }
 .footer__logo img {
   display: block;
+}
+
+.step1 {
+  padding: 25px 0;
+}
+.step1__head {
+  margin-right: auto;
+  text-align: center;
+}
+.step1__title {
+  font-size: 38px;
+  font-weight: 300;
+  color: #EE2D24;
+  margin-bottom: 15px;
+}
+.step1__text {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+.step1__circle {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.step1__circle .circle-text {
+  font-size: 40px !important;
+  font-weight: bold;
+  font-style: italic;
+}
+.step1__slider {
+  padding-bottom: 50px;
+  margin-bottom: 65px;
+}
+.step1__slider .noUi-target {
+  height: 6px;
+  width: 100%;
+}
+.step1__slider .noUi-connects {
+  background: #787878;
+}
+.step1__slider .noUi-connect {
+  background: #EE2D24;
+}
+.step1__slider .noUi-handle {
+  width: 30px;
+  height: 30px;
+  top: -13px;
+  border-radius: 100%;
+  background-color: #EE2D24;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+.step1__slider .noUi-handle:before, .step1__slider .noUi-handle:after {
+  display: none;
+}
+.step1__slider .noUi-value {
+  color: #000;
+}
+.step1__slider .noUi-value-sub {
+  font-size: 16px;
+  color: #000;
+}
+.step1__btn {
+  text-align: center;
+}
+
+.step1result {
+  padding: 40px 0;
+}
+.step1result__sticker {
+  width: 230px;
+  padding: 10px 10px;
+  margin-left: auto;
+  background-color: #FFF3F7;
+  font-size: 20px;
+  font-weight: 300;
+}
+.step1result__title {
+  font-size: 24px;
+  text-align: center;
+}
+.step1result__title strong {
+  font-weight: bold;
+  font-style: italic;
+}
+.step1result__title span {
+  font-weight: bold;
+  font-style: italic;
+  color: #EE2D24;
+}
+.step1result__img {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.step1result__btn {
+  text-align: center;
 }

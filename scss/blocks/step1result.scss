@@ -1,0 +1,31 @@
+.step1result {
+  padding: 40px 0;
+  &__sticker {
+    width: 230px;
+    padding: 10px 10px;
+    margin-left: auto;
+    background-color: #FFF3F7;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &__title {
+    font-size: 24px;
+    text-align: center;
+    strong {
+      font-weight: bold;
+      font-style: italic;
+    }
+    span {
+      font-weight: bold;
+      font-style: italic;
+      color: $red;
+    }
+  }
+  &__img {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__btn {
+    text-align: center;
+  }
+}
