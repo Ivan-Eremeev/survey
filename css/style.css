@@ -433,7 +433,7 @@ body.lock {
   display: none;
 }
 .step1__slider .noUi-value {
-  top: 15px;
+  top: 20px;
   color: #000;
 }
 .step1__slider .noUi-value-sub {
@@ -443,6 +443,7 @@ body.lock {
 .step1__slider .noUi-marker {
   height: 10px;
   background: #787878;
+  top: 20px;
 }
 .step1__btn {
   text-align: center;
