@@ -299,6 +299,13 @@ body.lock {
   -ms-user-select: none;
   user-select: none;
   color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover {
+  -webkit-box-shadow: 0 5px 20px rgba(238, 45, 36, 0.5);
+  box-shadow: 0 5px 20px rgba(238, 45, 36, 0.5);
 }
 
 .navPage {
