@@ -1,26 +1,28 @@
 .step1 {
-  padding: 25px 0;
+  padding: 20px 0;
   &__head {
     margin-right: auto;
     text-align: center;
   }
   &__title {
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 300;
     color: $red;
-    margin-bottom: 15px;
   }
   &__text {
-    font-size: 24px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   &__circle {
     text-align: center;
     margin-bottom: 55px;
     .circle-text {
-      font-size: 40px !important;
+      font-size: 50px !important;
       font-weight: bold;
       font-style: italic;
     }
@@ -39,9 +41,9 @@
       background: $red;
     }
     .noUi-handle {
-      width: 30px;
-      height: 30px;
-      top: -13px;
+      width: 40px;
+      height: 40px;
+      top: -18px;
       border-radius: 100%;
       background-color: $red;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
@@ -51,17 +53,17 @@
       }
     }
     .noUi-value {
-      top: 20px;
+      top: 10px;
       color: #000;
+      font-size: 30px;
     }
     .noUi-value-sub {
-      font-size: 16px;
       color: #000;
     }
     .noUi-marker {
       height: 10px;
       background: $gray;
-      top: 20px;
+      top: 25px;
     }
   }
   &__btn {

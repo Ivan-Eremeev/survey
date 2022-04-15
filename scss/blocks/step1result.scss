@@ -1,5 +1,5 @@
 .step1result {
-  padding: 40px 0;
+  padding: 100px 0 20px;
   &__sticker {
     width: 230px;
     padding: 10px 10px;
@@ -9,9 +9,12 @@
     font-weight: 300;
   }
   &__title {
-    font-size: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
     strong {
       font-weight: bold;
       font-style: italic;
@@ -25,8 +28,9 @@
   &__img {
     margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 30px;
     img {
-      max-width: 750px;
+      max-width: 770px;
     }
   }
   &__btn {
